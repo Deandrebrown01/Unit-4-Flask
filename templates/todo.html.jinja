@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+background-color: rgb(200, 181, 217);
+}
+
+
+h1{
+    color: rgb(124, 124, 203);
+    
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+</style>
+<head>
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+<h1> De'Andres List</h1>
+
+<ul>
+{% for a in My_Goals %}
+   <li>
+   {{a}}
+   </li>
+
+{% endfor %}
+</ul>
+<form method="post">
+<input name="new_todo">
+<input type="submit">
+</form>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>
