@@ -13,6 +13,16 @@ h1{
 
 
 }
+
+p{
+    color: rgb(56, 56, 149);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.button{
+    font-family: 'Times New Roman', Times, serif;
+    
+}
 </style>
 <head>
 
@@ -36,6 +46,9 @@ h1{
 {% for a in My_Goals %}
    <li>
    {{a}}
+   <form method="POST" action="/delete_todo/{{loop.index0}}">
+   <input type="submit" value="POST">
+   </form>
    </li>
 
 {% endfor %}
