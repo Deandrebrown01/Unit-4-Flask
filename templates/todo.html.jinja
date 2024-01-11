@@ -53,11 +53,11 @@ p{
 {% for a in My_Goals %}
    <li>
    {{a['description']}}
-   <form method="POST" action="/delete_todo/{{loop.index0}}">
+   <form method="POST" action="/delete_todo/{{a['id']}}">
 
    <input type="submit" value="POST">
    </form>
-<form method="POST" action="/complete_todo/{{loop.index0}}">
+<form method="POST" action="/complete_todo/{{a['id']}}">
 <input type="submit" value="Mark Complete">
 </form>
    {%if a ['complete']%}☺️{%endif%}
